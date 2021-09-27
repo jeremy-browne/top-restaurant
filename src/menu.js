@@ -2,7 +2,7 @@ import menuImage from "./images/homeImage.jpg";
 
 function newMenuItem(name, desc, price, image) {
     const menuItem = document.createElement("div");
-    const title = document.createElement("h3");
+    const title = document.createElement("h1");
     const description = document.createElement("p");
     const priceTag = document.createElement("p");
     const img = document.createElement("img");
@@ -31,6 +31,7 @@ function menu(element) {
     const title = document.getElementById("title").innerText;
     const descriptionBox = document.createElement("div");
     const description = document.createElement("p");
+    description.classList.add("bodyDesc");
     const foods = [
         newMenuItem("Mixed Kebab", "A delicious mixed Kebab with lots of things.", "$9.99", menuImage),
         newMenuItem("HSP", "A mixed HSP with hot chilli, garlic and BBQ sauce.", "$12.99", menuImage),

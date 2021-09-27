@@ -4,6 +4,7 @@ function aboutUs(element) {
     const title = document.getElementById("title").innerText;
     const descriptionBox = document.createElement("div");
     const description = document.createElement("p");
+    description.classList.add("bodyDesc");
     const lorem = new LoremIpsum({
         sentencesPerParagraph: {
             max: 8,
