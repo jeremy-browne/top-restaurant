@@ -31,8 +31,9 @@ function contact(element) {
             zoom: 8,
         });
 
-        marker = new google.maps.Marker({
-            position: {lat: -37.7475805, lng: 145.0226729},
+        new google.maps.Marker({
+            position: {lat: -37.7475805, lng: 145.0226729}, map,
+            title: "We are here!",
         });
     });
 
